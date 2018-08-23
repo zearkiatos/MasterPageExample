@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterPageExample.LayoutPage"
+                         Title="Layout Example">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HeightRequest="40" BackgroundColor="Black" Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="FillAndExpand" >
+                <Label Text="Header" TextColor="White"></Label>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+                <ScrollView>
+                    <StackLayout x:Name="MainContentContainer">
+                        
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout HeightRequest="40" BackgroundColor="Black" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                <Label Text="Footer" TextColor="White"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
